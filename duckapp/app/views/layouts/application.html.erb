@@ -5,11 +5,24 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
+	<!-- logo and menu -->
+	<div id="site-wrapper">
+		<div id="site-canvas">
+			
 
+			<a href="#" class="toggle-nav btn btn-menu"><%= icon('bars') %></a>
+			
 
-<%= yield %>
+			<%= yield %>
+			<div id="site-menu">
+				<h2>Menu</h2>
+			</div><!--end menu-->
+
+		</div><!-- end #site-canvas -->
+	</div><!-- end #site-wrapper -->
 
 </body>
 </html>

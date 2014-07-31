@@ -6,6 +6,7 @@ gem 'autoprefixer-rails'
 
 gem 'compass-rails'
 
+gem 'font-awesome-sass'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
