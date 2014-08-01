@@ -1,5 +1,7 @@
 class Photo < ActiveRecord::Base
 
-	validates :instagram :presence=> true
+	belongs_to :post
+
+	validates :instagram :presence => true
 
 end

@@ -1,1 +1,38 @@
 <!-- NEW POST FORM --> 
+<head></head>
+
+<h1>Hi.</h1>
+<p>Hurrah hurrah! Congratulations on joining Team Canard!</p>
+
+
+
+
+
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Accept</button> 
+
+	
+<div class="modal-body">
+	<%= form_for post do |f| %>
+		<div id="duckSet">
+			<div id="duck_select">
+				<%= f.select :duck_id, options_from_collection_for_select(@ducks, 'id'. 'title', :selected => post.duck) %> 
+			</div>
+			<br>
+
+			<%= f.text_field :name, :placeholder => post.name, :size => 30 %>
+			<br>
+			<%= f.text_field :instagram, :placeholder => post.instagram, :size => 30 %>
+			<br>
+			<%= f.text_field :email, :placeholder => post.email, :size => 30 %>
+			<br>
+			<%= f.text_field :location, :placeholder => post.location, :size => 50 %>
+			<br>
+			<%= f.text_area :blog, :placeholder => post.blog, :rows => '10', :cols => '105' %>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<%= f.submit "Submit", data: { disable_with: "Saving..." }%>
+		</div>
+	
+	<%end%>
+
