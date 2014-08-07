@@ -1,14 +1,72 @@
 <!-- Section 1: concept and CTA -->
-
-<div class="container">
-	<h1>Globe trotting duckies.<br>Bringing people together.</h1>
-</div>
+	<section class="landing1">
+		<div class="container">
+			<div class="row">
+					<h1>Globe trotting duckies.<br>Bringing people together.</h1>
+				
+			</div>
+			<div class="row row-centered">
+				<div class="col-sm-12">
+					<a href="#" class="btn text-center">What is #duckymissions?</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- Section 2: Active ducks -->
-
+	<section class="landing2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Active duckies.</h2>
+					<%= render 'duckposts' %>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- Section 3: The team -->
-
+	<section class="landing3">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>The team.</h2>
+				</div>
+			</div>
+			<div class="row team">
+				<div class="col-xs-6 ">
+						<div class="row">
+							<%= image_tag('sarah.png', :class => "center-block") %>
+						</div>
+						<div class="row descrip">
+							<h3>Sarah</h3>
+							<p>Yo its sarah a;sldkfjpaowiej laksdjf owiejf ; askdjfpowi  owiejf aoisdjf apowiej fjapso jfwoi jfaposdij fjaposidjf fjapoie adf</p>
+						</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="row">
+						<%= image_tag('michael.png', :class => "center-block") %>
+					</div>
+					<div class="row descrip">
+						<h3>Michael</h3>
+						<p>Yo its sarah a;sldkfjpaowiej laksdjf owiejf ; askdjfpowi  owiejf aoisdjf apowiej fjapso jfwoi jfaposdij fjaposidjf fjapoie adf</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- Section 4: Urbian info -->
 
+	<section class="landing4">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<%= image_tag('urbian_circle.png') %>
+				</div>
+				<div class="col-sm-8">
+					<p>Urbian info here</p>
+				</div>
+			</div>
+		</div>
+	</section>

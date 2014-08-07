@@ -2,12 +2,15 @@
 @import "bootstrap";
 @import "font-awesome";
 
-@import "variables";
+@import "globals/_variables";
+@import "globals/_mixins";
 @import "base";
-@import "buttons";
 @import "layout";
-@import "mixins";
-@import "typography";
+
+@import "modules/buttons";
+@import "modules/typography";
+
+@import "landing";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
