@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
 
+
+  resources :users, :only => [:index, :create, :destroy, :edit, :new, :show]
+  resources :ducks, :only => [:index, :create, :destroy, :edit, :new, :show]
+  resources :missions, :only => [:index, :create, :destroy, :edit, :new, :show]
+  resources :posts, :only => [:index, :create, :destroy, :edit, :new, :show]
+
+  resources :ducks do
+    resources :missions, :only => [:index, :destroy, :edit]
+  end
+
+
   root "pages#landing"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
