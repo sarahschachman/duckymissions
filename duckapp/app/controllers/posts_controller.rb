@@ -11,19 +11,20 @@ class PostsController < ApplicationController
 	def edit
 		@posts = Post.all.map { |p| [p.location, p.blog]}
 		@users = User.all.map { |n| [n.intsagram]}
+	end
 
 	def create
 		@post = post.new(post_params)
 		if @post.save!
 			redirect_to post_path
 		else
-			render 'new'
+			render 'posts#new'
 		end
 	end
 
 	private
 
 		def post_params
-			params.require(:post).permit(:photo_id, :user_id, :duck_id, :location, :blog )
+			params.require(:post).permit(:photo_id, :user_id, :duck_id, :location, :blog, :name, :instagram, :email)
 		end
 end

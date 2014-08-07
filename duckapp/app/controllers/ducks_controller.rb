@@ -2,6 +2,12 @@ class DucksController < ApplicationController
 
 	def index
 		@ducks = Duck.all
+		@posts = Post.all
+		@hash = Gmaps4rails.build_markers(@users) do |post, marker|
+		  marker.lat user.latitude
+		  marker.lng user.longitude
+		  marker.infowindow post.blog
+		end
 	end
 
 	def new

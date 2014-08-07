@@ -1,1 +1,38 @@
-<!-- Map and feed page?? -->
+<!-- Only feed page?? -->
+
+<h1>Duck Feed</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>Duck Name</th>
+			<th>Location</th>
+			<th>Participant Name</th>
+			<th>Blog</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<div class="field">
+		  <%= f.label :duck %><br />
+		  <%= f.collection_select(:duck_id, @ducks, :id, :name, :include_blank => "Please select a duck...") %>
+		</div>
+		<!-- How to connect code above and below -->
+		<% @ducks.each do |duck| %>
+			<tr>
+				<td><%= duck.name %></td>
+			</tr>
+		<% end %>
+		<!--Can I do post.duck.name below? -->
+		<% @posts.each do |post| %>
+			<tr>
+				<td><%= post.location %></td>
+				<td><%= post.name %> | <%= post.instagram %></td>
+				<td><%= post.blog %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+
+<%= link_to 'New Post', new_post_path %>
