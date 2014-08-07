@@ -1,3 +1,33 @@
-.explore {
-	
+
+.logheader {
+	background-color: $yellow;
+	height: 30vw;
+	text-align: center;
+	h2 {
+		margin-top: 15vw;
+	}
+	.duckinput {
+		margin-top: 5vw;
+	}
+}
+
+.instructions {
+	.container {
+		width: 70%;
+	}
+	img {
+	width: 7vw;
+	float:right;
+	}
+	.row {
+		margin-bottom: 3vw;
+	}
+	p {
+		font-size: 2vw;
+		font-style: italic;
+	}
+	h2 {
+		margin: 3vw;
+		font-size: 3vw;
+	}
 }

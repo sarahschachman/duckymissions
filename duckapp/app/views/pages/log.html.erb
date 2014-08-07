@@ -1,17 +1,78 @@
 <!-- log a duck and instructions page -->
 
-<section class="explore">
-	<h1>Explore active ducks.</h1>
-</section>
-<section class="tabs">
-	<div class="container">	
-		<div class="row">
-			<div class="col-xs-6 maptab">
-				<h2>Map</h2>
-			</div>
-			<div class="col-xs-6 feedtab">
-				<h2>Feed<h2>
-			</div>
+	<section class="logheader">
+		<div class="container">
+			<h2>Have a duck? Log it here.</h2>
+			<form>
+				<input name="duck" type="text" class="mac"/>
+			</form>
 		</div>
-	</div>
-</section>
+	</section>
+
+	<section class="instructions">
+		<div class="container">
+			<div class="row row-centered">
+				<h2>How #duckymissions works</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<%= image_tag('duckling.png') %>
+				</div>
+				<div class="col-xs-9">
+					<p>Receive a duck from a friend</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<%= image_tag('qr6.png') %>
+				</div>
+				<div class="col-xs-9">
+					<p>Scan its QR code or log it here.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<%= image_tag('book135.png') %>
+				</div>
+				<div class="col-xs-9">
+					<p>Enter info about your duck's journey and about yourself to add to your duck's story.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<%= image_tag('instagram.png') %>
+				</div>
+				<div class="col-xs-9">
+					<p>Instagram a photo with #duckymissions. Your photo will show up on our interactive map.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<%= image_tag('delivery35.png') %>
+				</div>
+				<div class="col-xs-9">
+					<p>Send your duck on its way to complete its mission!</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<%= image_tag('map29.png') %>
+				</div>
+				<div class="col-xs-9">
+					<p>Come back to duckymissions.co.za to check your duck's progress and connect with others who have helped it on its way.</p>
+				</div>
+			</div>
+
+			<div class="row row-centered">
+				<%= link_to("See current ducks", "pages/explore", class: "btn text-center") %>
+			</div>
+
+		</div>
+	</section>	
+
