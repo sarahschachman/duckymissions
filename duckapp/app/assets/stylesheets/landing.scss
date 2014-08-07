@@ -99,9 +99,19 @@
     img {
     	width: 18vw;
     }
+    p {
+    	font-size: 3vw;
+    }
+    .address {
+    	vertical-align: baseline;
+    }
+ 	// .content {
+ 	// 	height: 18vw;
+ 	// 	vertical-align: middle;
+ 	// }
     .container {
     	position: relative;
-		top: -22vw;
+		top: -21vw;
     }
 }
 
