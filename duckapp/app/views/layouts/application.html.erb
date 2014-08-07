@@ -13,11 +13,17 @@
 	<div id="site-wrapper">
 		<div id="site-canvas">
 			
-
+			<%= image_tag("full_logo.png", class: "logo") %>
+			
 			<a href="#" class="toggle-nav btn btn-menu"><%= icon('bars') %></a>
 			
-
+			
 			<%= yield %>
+
+			<div id="footer">
+				<p>#duckymissions &copy 2014</p>
+			</div>
+			
 			<div id="site-menu">
 				<h2>Menu</h2>
 			</div><!--end menu-->
