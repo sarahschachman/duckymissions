@@ -137,4 +137,13 @@ p {
         0 0 5px 1px black;
 }
 
+.menulink {
+    color: black; 
+    &:hover{
+        color: #808080; 
+        font-style: italic; 
+        text-decoration: none;
+    }
+}
+
 //////////////////

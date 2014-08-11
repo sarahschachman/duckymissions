@@ -6,12 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'icon.ico' %>
-  
 
-	<style type="text/css"> 
-		a { color: #000 ; } 
-	</style> 
-	
 </head>
 
 <body>
@@ -37,9 +32,9 @@
 
 				<h2>Menu</h2>
 				<br>
-				<h4><%= link_to "Log a Duck", posts_path %></h4>
+				<h4><%= link_to "Log a Duck", pages_log_path, class: "menulink" %></h4>
 				<br>
-				<h4><%= link_to "Explore Ducky Missions", posts_path %></h4>
+				<h4><%= link_to "Explore Ducky Missions", pages_explore_path, class: "menulink" %></h4>
 			</div><!--end menu-->
 
 
