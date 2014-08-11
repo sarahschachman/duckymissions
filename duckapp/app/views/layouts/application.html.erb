@@ -3,11 +3,17 @@
 <head>
   <title>Ducky Missions</title>
   <%= stylesheet_link_tag    'application', rel:'stylesheet', media: 'all', 'data-turbolinks-track' => true %>
-
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'icon.ico' %>
   
+
+	<style type="text/css"> 
+		a { color: #000 ; } 
+	</style> 
+	
 </head>
+
 <body>
 	<!-- logo and menu -->
 	<div id="site-wrapper">
@@ -26,6 +32,10 @@
 			
 			<div id="site-menu">
 				<h2>Menu</h2>
+				<br>
+				<h4><%= link_to "Log a Duck", posts_path %></h4>
+				<br>
+				<h4><%= link_to "Explore Ducky Missions", posts_path %></h4>
 			</div><!--end menu-->
 
 		</div><!-- end #site-canvas -->
