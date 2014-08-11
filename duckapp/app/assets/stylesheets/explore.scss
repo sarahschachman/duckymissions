@@ -1,0 +1,31 @@
+.explore {
+  background-color: $yellow;
+  height: 23vw;
+  text-align: center;
+  h2 {
+    margin-top: 14vw;
+  }
+}
+
+.tabs {
+  background-color: $yellow;
+  .container{
+    width: 100%;
+  }
+  .tab {
+    text-align: center;
+    border-radius: 2vw;
+    height: 6vw;
+
+  }
+  .maptab {
+    background-color: white;
+  }
+  .feedtab {
+    background-color: $yellow-darker;
+  }
+}
+
+.rendersection {
+  height: 60vw;
+}
