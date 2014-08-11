@@ -21,6 +21,12 @@ p {
   font-family: "Crimson Text", serif;
 }
 
+.valign {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
 .logo{
 	width: 10%;
 	position: absolute;
