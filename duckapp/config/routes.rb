@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   get 'pages/log'
   get 'pages/explore'
+  get 'pages/landing'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

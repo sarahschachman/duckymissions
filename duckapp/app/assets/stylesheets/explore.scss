@@ -28,4 +28,22 @@
 
 .rendersection {
   height: 60vw;
+  .mac {
+    border-radius: .5vw;
+    font-size: 2vw;
+    padding: 0.5vw 0.8vw;
+    &:focus {
+      box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1), 
+        0 0 5px 1px $yellow;
+    }
+  }
+  form {
+    padding: 3vw;
+    label {
+      padding-right: 1vw;
+      font-size: 2vw;
+    }
+  }
 }
