@@ -2,31 +2,47 @@
 <html>
 <head>
   <title>Ducky Missions</title>
+<<<<<<< HEAD
   
 
   <%= javascript_include_tag 'application' %>
+=======
+  <%= stylesheet_link_tag    'application', rel:'stylesheet', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+>>>>>>> 7aa3b536c411ffafeb22a706b8739400993e46cc
   <%= csrf_meta_tags %>
-  
+  <%= favicon_link_tag 'icon.ico' %>
+
 </head>
+
 <body>
 	<!-- logo and menu -->
 	<div id="site-wrapper">
 		<div id="site-canvas">
 			
-			<%= image_tag("full_logo.png", class: "logo") %>
+			<div class="header">
+				<a href="/pages/landing"><%= image_tag("full_logo.png", class: "logo") %></a>
+				<a href="#" class="toggle-nav btn btn-menu"><%= icon('bars') %></a>
+				
+			</div>
 			
-			<a href="#" class="toggle-nav btn btn-menu"><%= icon('bars') %></a>
-			
-			
-			<%= yield %>
+			<div class="body">
+				<%= yield %>
+			</div>
 
 			<div id="footer">
 				<p>#duckymissions &copy 2014</p>
 			</div>
 			
 			<div id="site-menu">
+
 				<h2>Menu</h2>
+				<br>
+				<h4><%= link_to "Log a Duck", pages_log_path, class: "menulink" %></h4>
+				<br>
+				<h4><%= link_to "Explore Ducky Missions", pages_explore_path, class: "menulink" %></h4>
 			</div><!--end menu-->
+
 
 		</div><!-- end #site-canvas -->
 	</div><!-- end #site-wrapper -->

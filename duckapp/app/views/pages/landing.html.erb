@@ -7,7 +7,9 @@
 			</div>
 			<div class="row row-centered">
 				<div class="col-sm-12">
-					<a href="#" class="btn text-center">What is #duckymissions?</a>
+
+					<%= link_to("What is #duckymissions?", pages_log_path, class: "btn text-center") %>
+
 				</div>
 			</div>
 		</div>
@@ -34,22 +36,31 @@
 				</div>
 			</div>
 			<div class="row team">
-				<div class="col-xs-6 ">
+				<div class="col-xs-4 ">
 						<div class="row">
 							<%= image_tag('sarah.png', :class => "center-block") %>
 						</div>
 						<div class="row descrip">
 							<h3>Sarah</h3>
-							<p>Yo its sarah a;sldkfjpaowiej laksdjf owiejf ; askdjfpowi  owiejf aoisdjf apowiej fjapso jfwoi jfaposdij fjaposidjf fjapoie adf</p>
+							<p>Sarah is a junior at Harvard University studying Computer Science and Psychology. She loves swing dancing, yoga, puppies, and anything pink.</p>
 						</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-4">
 					<div class="row">
 						<%= image_tag('michael.png', :class => "center-block") %>
 					</div>
 					<div class="row descrip">
 						<h3>Michael</h3>
-						<p>Yo its sarah a;sldkfjpaowiej laksdjf owiejf ; askdjfpowi  owiejf aoisdjf apowiej fjapso jfwoi jfaposdij fjaposidjf fjapoie adf</p>
+						<p>Michael is a senior at Georgetown University studying Business.</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="row">
+						<%= image_tag('liana.png', :class => "center-block") %>
+					</div>
+					<div class="row descrip">
+						<h3>Liana</h3>
+						<p>Liana is a senior at Stanford University studying Symbolic Systems and Modern Languages. She loves to travel, dance, and meet new people.</p>
 					</div>
 				</div>
 			</div>
@@ -61,11 +72,13 @@
 	<section class="landing4">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-3 ">
 					<%= image_tag('urbian_circle.png') %>
 				</div>
-				<div class="col-sm-8">
-					<p>Urbian info here</p>
+				<div class="col-sm-9 ">
+					<div class="address">
+						<p>Urbian info here</p>
+					</div>
 				</div>
 			</div>
 		</div>
